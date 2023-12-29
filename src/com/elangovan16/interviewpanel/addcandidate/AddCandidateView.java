@@ -23,7 +23,6 @@ public class AddCandidateView {
 
 	public void onSuccess() {
 		System.out.println( green+"Inserted Successfully"+reset);
-
 	}
 
 	public void showError(String errorMessage) {
