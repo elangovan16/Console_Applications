@@ -1,32 +1,10 @@
 package com.elangovan16.chatbot;
 
-import java.util.Scanner;
+import com.elangovan16.chatbot.view.ChatBotView;
 
 public class ChatBot {
-	public static void main(String[] args) {
-		ChatBot chatBot = new ChatBot();
+	public static void main(String[] args) throws Exception {
+		ChatBotView chatBot = new ChatBotView();
 		chatBot.start();
-	}
-
-	private void start() {
-		boolean flag = true;
-		int choice;
-		Scanner sc = new Scanner(System.in);
-		do {
-			System.out.println("Enter your Option :");
-			choice = sc.nextInt();
-			switch (choice) {
-			case 0 -> {
-				
-			}
-			case -1 -> {
-				flag = false;
-			}
-			default -> {
-				
-			}
-			}
-		} while (flag);
-		sc.close();
 	}
 }
