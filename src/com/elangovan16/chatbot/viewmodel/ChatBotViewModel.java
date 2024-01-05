@@ -47,6 +47,9 @@ public class ChatBotViewModel {
 				n = sc.nextInt();
 				sc.nextLine();
 				return n;
+			} else {
+				sc.nextLine();
+				System.out.println("Wrong input");
 			}
 		}
 	}

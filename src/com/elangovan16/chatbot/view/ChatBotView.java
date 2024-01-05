@@ -28,6 +28,8 @@ public class ChatBotView {
 				String chat = chatBotViewModel.getCurrentChat();
 				if (!chat.equals("Press")) {
 					chatBotViewModel.removeCurrentChat();
+					chat = chatBotViewModel.getCurrentChat();
+					chatBotViewModel.displayCurrentChat(chat);
 				}
 			} else if (choice == -1) {
 				flag = false;
